@@ -115,16 +115,18 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right Content - Enhanced Profile */}
+          {/* Right Content - Enhanced Profile with Image */}
           <div className="flex justify-center lg:justify-end animate-fade-in">
             <div className="relative">
-              {/* Main Profile Circle */}
+              {/* Main Profile Circle with Image */}
               <div className="relative w-80 h-80 lg:w-96 lg:h-96">
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-400 via-blue-600 to-indigo-700 rounded-full shadow-2xl animate-pulse"></div>
-                <div className="absolute inset-2 bg-gradient-to-br from-blue-500 via-blue-700 to-indigo-800 rounded-full flex items-center justify-center">
-                  <div className="text-white text-6xl lg:text-7xl font-bold tracking-wider">
-                    AA
-                  </div>
+                <div className="absolute inset-2 bg-gradient-to-br from-blue-500 via-blue-700 to-indigo-800 rounded-full overflow-hidden">
+                  <img 
+                    src="https://i.postimg.cc/x12dV3Tv/temp-Imagegg20-WJ.avif" 
+                    alt="Asif Ahmed - Business Analyst"
+                    className="w-full h-full object-cover object-center rounded-full"
+                  />
                 </div>
                 
                 {/* Floating Elements */}
