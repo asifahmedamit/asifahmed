@@ -51,7 +51,7 @@ const Hero = () => {
                   <TrendingUp className="h-5 w-5 text-blue-600" />
                 </div>
                 <div>
-                  <div className="text-2xl font-bold text-gray-900">10+</div>
+                  <div className="text-2xl font-bold text-gray-900">2+</div>
                   <div className="text-sm text-gray-600">Years Experience</div>
                 </div>
               </div>
@@ -60,7 +60,7 @@ const Hero = () => {
                   <Database className="h-5 w-5 text-green-600" />
                 </div>
                 <div>
-                  <div className="text-2xl font-bold text-gray-900">50+</div>
+                  <div className="text-2xl font-bold text-gray-900">8+</div>
                   <div className="text-sm text-gray-600">Projects Completed</div>
                 </div>
               </div>
@@ -137,7 +137,7 @@ const Hero = () => {
                 
                 <div className="absolute -bottom-4 -left-4 bg-white rounded-2xl shadow-xl p-4 animate-bounce delay-500">
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-green-600">10+</div>
+                    <div className="text-2xl font-bold text-green-600">2+</div>
                     <div className="text-sm text-gray-600">Years Exp</div>
                   </div>
                 </div>
