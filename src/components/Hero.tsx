@@ -116,7 +116,7 @@ const Hero = () => {
           </div>
 
           {/* Right Content - Enhanced Profile with Image */}
-          <div className="flex justify-center lg:justify-end animate-fade-in">
+          <div className="flex justify-center animate-fade-in">
             <div className="relative">
               {/* Main Profile Circle with Image */}
               <div className="relative w-80 h-80 lg:w-96 lg:h-96">
