@@ -125,7 +125,7 @@ const Hero = () => {
                   <img 
                     src="https://i.postimg.cc/x12dV3Tv/temp-Imagegg20-WJ.avif" 
                     alt="Asif Ahmed - Business Analyst"
-                    className="w-full h-full object-cover rounded-full"
+                    className="w-4/5 h-4/5 object-cover rounded-full"
                   />
                 </div>
                 
