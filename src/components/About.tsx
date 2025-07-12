@@ -28,7 +28,7 @@ const About = () => {
       degree: "BSc in Electrical and Electronics Engineering",
       school: "Islamic University of Technology",
       location: "Bangladesh",
-      year: "2013-2017",
+      year: "2017-2021",
       icon: <Award className="h-6 w-6 text-green-600" />,
       gradient: "from-green-500 to-teal-600"
     }
