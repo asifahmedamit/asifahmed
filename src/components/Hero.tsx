@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowRight, Download, Linkedin, Mail, Phone, MapPin, BarChart3, TrendingUp, Database, Sparkles, Code, FileSpreadsheet, PieChart, Brain } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -14,7 +13,6 @@ const Hero = () => {
     { name: 'Excel', icon: FileSpreadsheet, color: 'text-green-600' },
     { name: 'Tableau', icon: PieChart, color: 'text-orange-600' },
     { name: 'SQL', icon: Database, color: 'text-purple-600' },
-    { name: 'R', icon: BarChart3, color: 'text-red-600' },
     { name: 'Machine Learning', icon: Brain, color: 'text-indigo-600' },
   ];
 
@@ -76,7 +74,7 @@ const Hero = () => {
             {/* Social Proof - Tools & Technologies */}
             <div className="animate-fade-in delay-700">
               <h3 className="text-lg font-semibold text-gray-700 mb-6">Expertise in Industry-Leading Tools</h3>
-              <div className="grid grid-cols-3 lg:grid-cols-6 gap-6">
+              <div className="grid grid-cols-3 lg:grid-cols-5 gap-6">
                 {tools.map((tool, index) => (
                   <div 
                     key={tool.name} 
