@@ -60,7 +60,7 @@ const Hero = () => {
                   <Database className="h-5 w-5 text-green-600" />
                 </div>
                 <div>
-                  <div className="text-2xl font-bold text-gray-900">8+</div>
+                  <div className="text-2xl font-bold text-gray-900">10+</div>
                   <div className="text-sm text-gray-600">Projects Completed</div>
                 </div>
               </div>
