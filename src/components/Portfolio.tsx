@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { ExternalLink, Github, BarChart3, TrendingUp, Users, Clock, ArrowRight, Sparkles } from 'lucide-react';
+import { ExternalLink, Github, BarChart3, TrendingUp, Users, Clock, ArrowRight, Sparkles, GraduationCap, Shield } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -34,6 +34,30 @@ const Portfolio = () => {
       featured: true
     },
     {
+      title: "ERP Optimization Case Study",
+      description: "MBA coursework project analyzing supplier selection and inventory strategy for a manufacturing firm. Calculated annual material costs, holding costs, and safety inventory to optimize total cost of ownership.",
+      tools: ["Excel", "MRP Systems", "Cost Analysis", "Statistical Modeling"],
+      metrics: [
+        { label: "Safety Stock Reduction", value: "15%", icon: <TrendingUp className="h-4 w-4" /> },
+        { label: "Suppliers Analyzed", value: "2", icon: <BarChart3 className="h-4 w-4" /> }
+      ],
+      category: "Strategic Analysis",
+      image: "bg-gradient-to-br from-indigo-500 to-blue-600",
+      featured: true
+    },
+    {
+      title: "Pandemic Supply Risk Assessment",
+      description: "Developed supplier risk scoring model for pharma glass manufacturers during COVID-19 pandemic. Analyzed 10 suppliers using weighted operational and financial risk factors to support 2 billion vaccine dose packaging.",
+      tools: ["Excel", "Risk Modeling", "Financial Analysis", "Supply Chain Analytics"],
+      metrics: [
+        { label: "Risk Reduction", value: "30%", icon: <Shield className="h-4 w-4" /> },
+        { label: "Suppliers Evaluated", value: "10", icon: <Users className="h-4 w-4" /> }
+      ],
+      category: "Risk Management",
+      image: "bg-gradient-to-br from-red-500 to-orange-600",
+      featured: true
+    },
+    {
       title: "Customer Inquiry Resolution Dashboard",
       description: "Designed and implemented Excel-based dashboard system with advanced analytics to track customer inquiry patterns, reducing response time by 35% through process optimization.",
       tools: ["Excel", "Power BI", "SQL", "Data Modeling"],
@@ -42,7 +66,7 @@ const Portfolio = () => {
         { label: "Customer Satisfaction", value: "94%", icon: <Users className="h-4 w-4" /> }
       ],
       category: "Customer Analytics",
-      image: "bg-gradient-to-br from-orange-500 to-red-600",
+      image: "bg-gradient-to-br from-purple-500 to-pink-600",
       featured: false
     }
   ];
@@ -78,7 +102,13 @@ const Portfolio = () => {
                 <div className={`h-64 ${project.image} flex items-center justify-center relative overflow-hidden`}>
                   <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all duration-500" />
                   <div className="relative z-10 text-center">
-                    <BarChart3 className="h-20 w-20 text-white/90 mx-auto mb-4" />
+                    {project.category === "Risk Management" ? (
+                      <Shield className="h-20 w-20 text-white/90 mx-auto mb-4" />
+                    ) : project.category === "Strategic Analysis" ? (
+                      <GraduationCap className="h-20 w-20 text-white/90 mx-auto mb-4" />
+                    ) : (
+                      <BarChart3 className="h-20 w-20 text-white/90 mx-auto mb-4" />
+                    )}
                     <Badge className="bg-white/20 text-white border-white/30 backdrop-blur-sm">
                       {project.category}
                     </Badge>
@@ -134,7 +164,13 @@ const Portfolio = () => {
               <Card key={index} className="group hover:shadow-xl transition-all duration-300 overflow-hidden border-0 shadow-lg">
                 <div className={`h-48 ${project.image} flex items-center justify-center relative overflow-hidden`}>
                   <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors" />
-                  <BarChart3 className="h-16 w-16 text-white/80 relative z-10" />
+                  {project.category === "Risk Management" ? (
+                    <Shield className="h-16 w-16 text-white/80 relative z-10" />
+                  ) : project.category === "Strategic Analysis" ? (
+                    <GraduationCap className="h-16 w-16 text-white/80 relative z-10" />
+                  ) : (
+                    <BarChart3 className="h-16 w-16 text-white/80 relative z-10" />
+                  )}
                   <Badge className="absolute top-4 left-4 bg-white/20 text-white border-white/30">
                     {project.category}
                   </Badge>
